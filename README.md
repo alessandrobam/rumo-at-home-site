@@ -1,3 +1,3 @@
-# Rumo [at home] website
+# Rumo website
 
-Static launch and tutorial page for Rumo [at home]. All names and data in the screenshots are fictional.
+Static launch and tutorial page for Rumo. All names and data in the screenshots are fictional.
