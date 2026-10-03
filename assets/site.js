@@ -20,3 +20,13 @@
     img.addEventListener('click', function () { big.src = img.currentSrc || img.src; big.alt = img.alt; dlg.showModal(); });
   });
 })();
+
+// "I'd like to know more": build the mailto here so the address isn't sitting in the page source.
+(function () {
+  var u = ['alessandrobam', 'gmail.com'].join('@');
+  var subj = encodeURIComponent("I'd like to know more about Rumo [at home]");
+  var body = encodeURIComponent("Hi,\n\nI came across the Rumo page and I'd like to know more.\n\nA bit about how I work (optional):\n");
+  document.querySelectorAll('a.interest').forEach(function (a) {
+    a.href = 'mailto:' + u + '?subject=' + subj + '&body=' + body;
+  });
+})();
